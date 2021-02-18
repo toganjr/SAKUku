@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:foreground="?attr/selectableItemBackground">
+    >
+
+    <RelativeLayout
+        android:id="@+id/CardViewTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded_green">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_delete_white_24dp" />
+
+        <TextView
+            android:id="@+id/transaksi_title"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_delete"
+            android:maxLines="1"
+            android:text="RP.1000.000"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/iceland"
+            />
+
+        <TextView
+            android:id="@+id/transaksi_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transaksi_title"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/TV_rincian"
+            android:maxLines="1"
+            android:text="Makan Makan Makan Makan MakanMakan Makan Makan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:fontFamily="@font/iceland" />
+
+        <ImageView
+            android:id="@+id/slash"
+            android:layout_width="1000dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/transaksi_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/TV_rincian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transaksi_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:text="Rincian : "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:fontFamily="@font/iceland"
+            />
+
+        <TextView
+            android:id="@+id/transaksi_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/transaksi_detail"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:text="dd-mm-yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:fontFamily="@font/iceland" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
